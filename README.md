@@ -54,6 +54,10 @@ npm start
 
 ```
 The application's backend should be accessible at http://localhost:3000/.
+
+
+
+
 The application's frontend should be accessible at http://localhost:5173/.
 
 ### Contributing
