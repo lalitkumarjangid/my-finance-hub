@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // Attempt to connect to the MongoDB database
-mongoose.connect(MONGO_URL)
+mongoose.connect(MONGO_URL//use your mongoDb URL here)
   .then(() => {
     console.log('Connected to MongoDB');
   })
