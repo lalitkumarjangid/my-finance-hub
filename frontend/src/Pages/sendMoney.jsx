@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default function SendMoney(props) {
     async function transferMoney() {
-        await axios.post("http://localhost:3000/api/v1/account/transfer", {
+        await axios.post("https://my-finance-hub-ten.vercel.app/api/v1/account/transfer", {
             to: props.name._id,
             amount
         },{
