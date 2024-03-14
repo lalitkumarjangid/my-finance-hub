@@ -1,5 +1,13 @@
 const { JWT_SECRET } = require("./config");
-const jwt = require("jsonwebtoken");
+let jwt;
+// Check if running in Node.js environment
+if (typeof window === 'undefined') {
+    jwt = require("jsonwebtoken");
+} else {
+    // If running in browser environment, use a browser-compatible JWT library or handle authentication differently.
+    // You might need to implement a different authentication mechanism for client-side code.
+    throw new Error("JWT authentication is not supported in browser environment");
+}
 
 const authMiddleware = (req, res, next) => {
     const authHeader = req.headers.authorization;
