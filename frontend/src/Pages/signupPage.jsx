@@ -27,7 +27,7 @@ export default function SignupPage () {
         ev.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:3000/api/v1/user/signup", {
+            const response = await axios.post("https://my-finance-hub-ten.vercel.app/api/v1/user/signup", {
                 firstName,
                 lastName,
                 username,
