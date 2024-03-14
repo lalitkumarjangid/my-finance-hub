@@ -7,7 +7,7 @@ export const useUser = () => {
 
     async function getDetails() {
         try {
-            const res = await axios.get("https://my-finance-hub-ten.vercel.app//api/v1/user/me", {
+            const res = await axios.get("https://my-finance-hub-ten.vercel.app/api/v1/user/me", {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 }
