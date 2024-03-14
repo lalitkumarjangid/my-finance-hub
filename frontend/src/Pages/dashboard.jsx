@@ -14,7 +14,7 @@ export default function Dashboard() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(`http://localhost:3000/api/v1/user/bulk?filter=${filter}`);
+        const response = await axios.get(`https://my-finance-hub-ten.vercel.app//api/v1/user/bulk?filter=${filter}`);
         setData(response.data.user);
       } catch (error) {
         console.error('Error fetching data:', error);
