@@ -3,10 +3,7 @@ const mongoose = require('mongoose');
 
 const mongoUrl = process.env.VITE_MONGO_URL;
 
-mongoose.connect(mongoUrl, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect(mongoUrl)
   .then(() => {
     console.log('Connected to MongoDB');
   })
